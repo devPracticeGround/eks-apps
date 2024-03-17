@@ -17,4 +17,10 @@ spec:
   destination:
     server: {{ .Values.spec.destination.server }}
     namespace: prometheus-stack
-  syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - Replace=true
+    - CreateNamespace=true
