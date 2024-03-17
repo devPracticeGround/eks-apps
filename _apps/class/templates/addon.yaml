@@ -11,6 +11,9 @@ spec:
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: HEAD
     path: addons/prometheus-stack # var
+    helm:
+      valueFiles:
+      - values.yaml
   destination:
     server: {{ .Values.spec.destination.server }}
     namespace: prometheus-stack
