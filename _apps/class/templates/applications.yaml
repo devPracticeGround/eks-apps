@@ -1,24 +1,72 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx
+  name: project-01 # var
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  # The project the application belongs to.
   project: default
-  
-  # Source of the application manifests
   source:
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: HEAD
-    path: nginx
-
-  # Destination cluster and namespace to deploy the application
+    path: projects/project-01 # var
   destination:
     server: {{ .Values.spec.destination.server }}
-    namespace: nginx
-  
-  # Sync policy
+    namespace: practices
   syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: project-02 # var
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: HEAD
+    path: projects/project-02 # var
+  destination:
+    server: {{ .Values.spec.destination.server }}
+    namespace: practices
+  syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: project-03 # var
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: HEAD
+    path: projects/project-03 # var
+  destination:
+    server: {{ .Values.spec.destination.server }}
+    namespace: practices
+  syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: project-04 # var
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: HEAD
+    path: projects/project-04 # var
+  destination:
+    server: {{ .Values.spec.destination.server }}
+    namespace: practices
+  syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
+---
