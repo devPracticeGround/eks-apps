@@ -13,7 +13,7 @@ spec:
     path: projects/project-01 # var
   destination:
     server: {{ .Values.spec.destination.server }}
-    namespace: practices
+    namespace: project-01
   syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
 ---
 apiVersion: argoproj.io/v1alpha1
@@ -31,7 +31,7 @@ spec:
     path: projects/project-02 # var
   destination:
     server: {{ .Values.spec.destination.server }}
-    namespace: practices
+    namespace: project-02
   syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
 ---
 apiVersion: argoproj.io/v1alpha1
@@ -49,7 +49,7 @@ spec:
     path: projects/project-03 # var
   destination:
     server: {{ .Values.spec.destination.server }}
-    namespace: practices
+    namespace: project-03
   syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
 ---
 apiVersion: argoproj.io/v1alpha1
@@ -67,6 +67,60 @@ spec:
     path: projects/project-04 # var
   destination:
     server: {{ .Values.spec.destination.server }}
-    namespace: practices
+    namespace: project-04
+  syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: project-05 # var
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: HEAD
+    path: projects/project-05 # var
+  destination:
+    server: {{ .Values.spec.destination.server }}
+    namespace: project-05
+  syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: project-06 # var
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: HEAD
+    path: projects/project-06 # var
+  destination:
+    server: {{ .Values.spec.destination.server }}
+    namespace: project-06
+  syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: project-07 # var
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: {{ .Values.spec.source.repoURL }}
+    targetRevision: HEAD
+    path: projects/project-07 # var
+  destination:
+    server: {{ .Values.spec.destination.server }}
+    namespace: project-07
   syncPolicy: {{ .Values.spec.syncPolicy | toYaml | nindent 4 }}
 ---
