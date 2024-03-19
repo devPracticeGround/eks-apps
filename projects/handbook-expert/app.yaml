@@ -37,7 +37,7 @@ metadata:
 spec:
   ingressClassName: "nginx"
   rules:
-  - host: handbook-expert.geunsam2.xyz # 도메인 주소 변경 요망
+  - host: handbook-expert.geunsam2.xyz
     http:
       paths:
       - path: /
