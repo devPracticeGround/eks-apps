@@ -1,6 +1,0 @@
-# Default Values of practice-helm/values.yaml:
-
-replicaCount: 1
-image: "geunsam2/cicd-practice:latest"
-# host: 필수 설정 필요. 
-# 예 host : "cicd-practice.com"
