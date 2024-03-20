@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: applicationset-addons
+  namespace: argocd
+spec:
+  generators:
+    - git:
+        repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+        revision: main
+        directories:
+          - path: "addons/kubernetes-dashboard"
+          # - path: "addons/*"
+  template:
+    metadata:
+      name: '{{path.basename}}'
+    spec:
+      project: default
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+        - Validate=false
+        - CreateNamespace=true
+        - Replace=true
+      source:
+        repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+        targetRevision: main
+        path: '{{path}}'
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{path.basename}}'
