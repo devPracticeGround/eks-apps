@@ -1,3 +1,3 @@
 "replicaCount": "1"
-"image": "geunsam2/cicd-practice:2d824d1c3dee4d52c50d81feb3ab5465ee014f07"
+"image": "geunsam2/cicd-practice:4f1d2ea45b386724a2e6b6df36c169c1b63cd58b"
 "host": "ktcloud-0321.geunsam2.xyz"
