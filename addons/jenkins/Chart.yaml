@@ -9,3 +9,6 @@ dependencies:
 - name: jenkins
   version: "5.0.20"
   repository: "https://charts.jenkins.io/jenkins"
+
+# jenkins도 우선은 helm으로 수동 설치 후퇴..
+# helm install jenkins jenkins/jenkins -n jenkins --version 5.0.20 --create-namespace --values ./values.yaml
