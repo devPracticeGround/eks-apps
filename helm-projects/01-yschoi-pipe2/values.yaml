@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "nyschoi/cicd-practice:923fbc1f76f8c498cfd57e09d6ba9bf43774fc41"
+"host": "01-yschoi-pipe2.geunsam2.xyz"
