@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "hamsw1005/cicd-practice:355ed729c677e9663b5ed7471c0079ab466035cf"
+"host": "16-seungwooham.geunsam2.xyz"
