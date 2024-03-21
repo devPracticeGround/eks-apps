@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cicd-practice
+spec:
+  ingressClassName: "nginx"
+  rules:
+  - host: {{ required "host까묵지 말라고 했지!!!" .Values.host }}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: my-service
+            port:
+              number: 80

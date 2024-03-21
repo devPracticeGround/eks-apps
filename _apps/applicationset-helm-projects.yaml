@@ -1,0 +1,37 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: applicationset-helm-projects
+  namespace: argocd
+spec:
+  generators:
+    - git:
+        repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+        revision: main
+        directories:
+          - path: "helm-projects/*"
+  template:
+    metadata:
+      name: '{{path.basename}}-helm'
+    spec:
+      project: default
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+        - Validate=false
+        - CreateNamespace=true
+      sources:
+      - repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+        targetRevision: main
+        path: 'helm-base'
+        helm: 
+          valueFiles:
+            - $refs/{{path}}/values.yaml
+      - repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+        targetRevision: main
+        ref: refs
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{path.basename}}'
