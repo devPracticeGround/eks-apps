@@ -1,0 +1,3 @@
+host: "99-geunsam2.geunsam2.xyz"
+replicaCount: 1
+image: "geunsam2/cicd-practice:latest"
