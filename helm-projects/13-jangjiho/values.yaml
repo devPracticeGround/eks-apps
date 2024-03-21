@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "jangjiho/cicd-practice:1dd8329f0d4dd2b477dc9d510714e1fa4faccd41"
+"host": "13-jangjiho.geunsam2.xyz"
