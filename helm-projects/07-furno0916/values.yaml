@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "furno0916/cicd-practice:52478b1d762db1e0b495ab15e29fadc37c32ef1c"
+"host": "07-furno0916.geunsam2.xyz"
