@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "jihoon15/cicd-practice:b9d0e038438d6435849543e9c04572af77710e76"
+"host": "11-jihoon15.geunsam2.xyz"
