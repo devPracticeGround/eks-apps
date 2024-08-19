@@ -78,7 +78,7 @@ controller:
     username: "admin"
     # -- Admin password created as a secret if `controller.admin.createSecret` is true
     # @default -- <random password>
-    password: "autoever!@#"
+    password: "geunsam2!@#"
 
     # -- The key in the existing admin secret containing the username
     userKey: jenkins-admin-user
@@ -395,7 +395,7 @@ controller:
   installPlugins:
     - kubernetes:4199.va_1647c280eb_2
     - workflow-aggregator:596.v8c21c963d92d
-    - git:5.2.1
+    # - git:5.2.1
     - configuration-as-code:1775.v810dc950b_514
 
   # If set to false, Jenkins will download the minimum required version of all dependencies.
@@ -939,7 +939,7 @@ agent:
       # ephemeralStorage:
     limits:
       cpu: "4096m"
-      memory: "4096Mi"
+      memory: "8192Mi"
       # ephemeralStorage:
   livenessProbe: {}
 #    execArgs: "cat /tmp/healthy"
