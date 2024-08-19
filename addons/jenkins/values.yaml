@@ -78,7 +78,7 @@ controller:
     username: "admin"
     # -- Admin password created as a secret if `controller.admin.createSecret` is true
     # @default -- <random password>
-    password: "ktcloud123!@#"
+    password: "autoever!@#"
 
     # -- The key in the existing admin secret containing the username
     userKey: jenkins-admin-user
