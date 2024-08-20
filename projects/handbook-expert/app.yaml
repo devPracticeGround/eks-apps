@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cicd-practice
-        image: geunsam2/handbook-expert:226e634dd73640ac4f0ffd4962a1abb8086ab836
+        image: geunsam2/handbook-expert:ec1f1bcc859d603ac9b408cb9e424853189f84ed
         ports:
         - containerPort: 3000
 ---
