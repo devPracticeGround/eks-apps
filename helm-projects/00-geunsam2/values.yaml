@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "geunsam2/cicd-practice:bb6c273863ed79b4de7f7b465043c573bcf0808f"
+"host": "00-geunsam2.geunsam2.xyz"
