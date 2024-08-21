@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "rindol/cicd-practice:f4db1c7b13701bc783b7d32e6edafa24e1575c85"
+"host": "10-rindol.geunsam2.xyz"
