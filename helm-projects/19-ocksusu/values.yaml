@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "ocksusu/cicd-practice:f9dbcbc00c42d23ad9e4df882aab823859cddd10"
+"host": "19-ocksusu.geunsam2.xyz"
