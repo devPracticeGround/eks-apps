@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "sumbara/cicd-practice:d9352132ad578d019c84fde45dee567fb4985719"
+"host": "09-muntae.geunsam2.xyz"
