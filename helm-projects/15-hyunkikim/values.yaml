@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "hyunkikim/cicd-practice:88cf7c53c3b9d223baada448de7ff03326bd16e5"
+"host": "15-hyunkikim.geunsam2.xyz"
