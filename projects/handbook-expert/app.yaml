@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: cicd-practice
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: cicd-practice
@@ -37,7 +37,7 @@ metadata:
 spec:
   ingressClassName: "nginx"
   rules:
-  - host: handbook-expert-2.geunsam2.xyz
+  - host: handbook-expert.geunsam2.xyz
     http:
       paths:
       - path: /
