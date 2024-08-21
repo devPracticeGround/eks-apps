@@ -1,3 +1,0 @@
-"replicaCount": "1"
-"image": "geunsam2/cicd-practice:latest"
-"host": "helm-example.geunsam2.xyz"
