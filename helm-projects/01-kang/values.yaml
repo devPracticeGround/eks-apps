@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "kangcg1230/cicd-practice:acef9cc2755931e9a8776f90709c08c67c944a30"
+"host": "01-kang.geunsam2.xyz"
