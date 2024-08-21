@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "hoouoo/cicd-practice:a8025ca7760b243ab78d56d5145f28c846bc3603"
+"host": "04-castleho.geunsam2.xyz"
