@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-practice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd-practice
+  template:
+    metadata:
+      labels:
+        app: cicd-practice
+    spec:
+      containers:
+      - name: cicd-practice
+        image: geunsam2/handbook-expert:df460d0565c62ca30432cce7ce8c595245b4a03b
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cicd-practice
+spec:
+  selector:
+    app: cicd-practice
+  ports:
+  - protocol: TCP
+    port: 3000
+    targetPort: 3000
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cicd-practice
+spec:
+  ingressClassName: "nginx"
+  rules:
+  - host: appset-test.geunsam2.xyz
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: cicd-practice
+            port:
+              number: 3000
