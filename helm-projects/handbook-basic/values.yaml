@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "geunsam2/handbook-basic:9288a3807b136d229e1539dbb9ca85acb1c45edd"
+"host": "handbook-basic.geunsam2.xyz"
