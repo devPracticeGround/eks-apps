@@ -6,7 +6,7 @@
 # spec:
 #   generators:
 #     - git:
-#         repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+#         repoURL: "https://github.com/devPracticeGround/eks-apps.git"
 #         revision: main
 #         directories:
 #           - path: "addons/*"
@@ -24,7 +24,7 @@
 #         - CreateNamespace=true
 #         - Replace=true
 #       source:
-#         repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+#         repoURL: "https://github.com/devPracticeGround/eks-apps.git"
 #         targetRevision: main
 #         path: '{{path}}'
 #       destination:

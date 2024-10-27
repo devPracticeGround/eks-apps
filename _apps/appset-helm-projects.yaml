@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+        repoURL: "https://github.com/devPracticeGround/eks-apps.git"
         revision: main
         directories:
           - path: "helm-projects/*"
@@ -23,13 +23,13 @@ spec:
         - Validate=false
         - CreateNamespace=true
       sources:
-      - repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+      - repoURL: "https://github.com/devPracticeGround/eks-apps.git"
         targetRevision: main
         path: 'helm-base'
         helm: 
           valueFiles:
             - $refs/{{path}}/values.yaml
-      - repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+      - repoURL: "https://github.com/devPracticeGround/eks-apps.git"
         targetRevision: main
         ref: refs
       destination:
