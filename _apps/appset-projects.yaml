@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+        repoURL: "https://github.com/devPracticeGround/eks-apps.git"
         revision: main
         directories:
           - path: "projects/*"
@@ -23,7 +23,7 @@ spec:
         - Validate=false
         - CreateNamespace=true
       source:
-        repoURL: "https://github.com/devPracticeCenter/eks-apps.git"
+        repoURL: "https://github.com/devPracticeGround/eks-apps.git"
         targetRevision: main
         path: '{{path}}'
       destination:
