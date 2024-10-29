@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "oookim/cicd-practice:6dd9c8e0fdf099ad3ba0b4d8e783184ac582dc6e"
+"host": "17-oookim.geunsam2.xyz"
