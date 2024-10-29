@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "yongdoobaek/cicd-practice:ece291080ac3893e5f81d514f2e9a22a5edd5eee"
+"host": "06-yongdoobaek.geunsam2.xyz"
