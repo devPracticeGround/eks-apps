@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "eunnseo/cicd-practice:41f9dc9b143fce5db80fd5d5d151781085cd2c89"
+"host": "09-eunnseo.geunsam2.xyz"
