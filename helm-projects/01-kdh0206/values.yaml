@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "kdh0206/cicd-practice:c3fcb899184f183fbaec4ad34f809f8e17faca94"
+"host": "01-kdh0206.geunsam2.xyz"
