@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "hyungminshin/cicd-practice:9b453c266e7be34bb15d4009f6435c03c8d8c392"
+"host": "11-hyungminshin.geunsam2.xyz"
