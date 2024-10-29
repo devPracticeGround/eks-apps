@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "wschoi01/cicd-practice:b604a9f564d893cd4e4169097830ec4af5fa05e8"
+"host": "07-wschoi01.geunsam2.xyz"
