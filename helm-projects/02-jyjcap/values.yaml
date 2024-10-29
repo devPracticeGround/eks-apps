@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "jyjcap/cicd-practice:b6f871e532a468d439e10c890541503a24de6971"
+"host": "02-jyjcap.geunsam2.xyz"
