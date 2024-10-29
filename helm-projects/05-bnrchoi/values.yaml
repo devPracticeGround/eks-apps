@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "bnrchoi/cicd-practice:dd31b4e449fae2d7ef146c59ec62b935f19c6877"
+"host": "05-bnrchoi.geunsam2.xyz"
