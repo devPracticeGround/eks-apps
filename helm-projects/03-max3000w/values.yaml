@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "max3000w/cicd-practice:02aa5b4366828623b05179515dffe4cfea59ea57"
+"host": "03-max3000w.geunsam2.xyz"
