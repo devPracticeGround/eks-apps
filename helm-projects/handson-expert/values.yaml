@@ -1,3 +1,3 @@
 "replicaCount": "1"
-"image": "geunsam2/cicd-practice:14f99cd9024e6d28b40803b5bd6bb348f74de64f"
+"image": "geunsam2/cicd-practice:9fb22499e64dc55b1a6407182dfbd998bb1078b4"
 "host": "handson-expert.geunsam2.xyz"
