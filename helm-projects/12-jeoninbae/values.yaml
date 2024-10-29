@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "jeoninbae/cicd-practice:a68dd9889802ba54a39a104bd1074dfa6b448e64"
+"host": "12-jeoninbae.geunsam2.xyz"
