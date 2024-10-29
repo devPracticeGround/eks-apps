@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "hjlee904/cicd-practice:1c65ffbf28089de1ddfc8cc719f125c55f3c3246"
+"host": "08-hjlee904.geunsam2.xyz"
