@@ -1,0 +1,3 @@
+"replicaCount": "1"
+"image": "gilgam/cicd-practice:c8f7ebb833d1fc0b8cc088b80e8975f7031786f6"
+"host": "10-gilgam.geunsam2.xyz"
